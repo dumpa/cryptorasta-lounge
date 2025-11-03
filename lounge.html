@@ -47,15 +47,7 @@
     </audio>
     <div id="dialogue"></div>
 
-    <!-- Example Rasta Avatar -->
-    <img src="images/rasta04195.png" class="rasta" style="top:60%; left:15%;" onclick="showDialogue('Don\'t chase the beat, feel it catch you.')">
-    <img src="images/rasta04229.png" class="rasta" style="top:35%; left:20%;" onclick="showDialogue('We\'re all vibrations, bredren.')">
-    <img src="images/rasta05033.png" class="rasta" style="top:55%; left:45%;" onclick="showDialogue('*exhales deeply*')">
-    <img src="images/rasta05432.png" class="rasta" style="top:40%; left:70%;" onclick="showDialogue('I been skanking since before your blockchain.')">
-    <img src="images/rasta05723.png" class="rasta" style="top:85%; left:75%;" onclick="showDialogue('Did I press play... or did play press me?')">
-    <img src="images/rasta07005.png" class="rasta" style="top:15%; left:60%;" onclick="showDialogue('Shhh... the reverb is speaking.')">
-    <img src="images/rasta09630.png" class="rasta" style="top:70%; left:5%;" onclick="showDialogue('I don\'t loop. I glitch, baby.')">
-    <img src="rasta8.png" class="rasta" style="top:50%; left:85%;" onclick="showDialogue('The riddim... chooses you.')">
+    <!-- Rastas will be loaded here dynamically -->
 
     <!-- Record player area -->
     <div style="position:absolute; bottom:10%; left:45%; width:100px; height:100px; cursor:pointer;" onclick="toggleDub()"></div>
@@ -64,6 +56,7 @@
   <script>
     const dub = document.getElementById('dub');
     const dialogue = document.getElementById('dialogue');
+    const lounge = document.getElementById('lounge');
 
     function toggleDub() {
       if (dub.paused) {
@@ -78,6 +71,22 @@
       dialogue.style.display = 'block';
       setTimeout(() => dialogue.style.display = 'none', 3000);
     }
+
+    fetch('cryptorastas.json')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach((rasta, index) => {
+          const img = document.createElement('img');
+          img.src = rasta.image;
+          img.classList.add('rasta');
+          const top = rasta.position?.top || `${Math.random() * 80 + 10}%`;
+          const left = rasta.position?.left || `${Math.random() * 80 + 10}%`;
+          img.style.top = top;
+          img.style.left = left;
+          img.onclick = () => showDialogue(`${rasta.name} says: \"${rasta.quote}\"`);
+          lounge.appendChild(img);
+        });
+      });
   </script>
 </body>
 </html>
