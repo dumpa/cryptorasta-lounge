@@ -1,0 +1,72 @@
+[
+  {
+    "id": "04229",
+    "name": "Lee Vibez",
+    "role": "horns player",
+    "origin": "San Andres, Colombia",
+    "style": "strictly roots",
+    "quote": "Greetings breddas and sistrens...",
+    "image": "images/rasta04229.png",
+    "position": null
+  },
+  {
+    "id": "05033",
+    "name": "Marion Jackson",
+    "role": "cooker",
+    "origin": "New York, USA",
+    "style": "always talks about vinyl records",
+    "quote": "Mi only seasoning is wax.",
+    "image": "images/rasta05033.png",
+    "position": null
+  },
+  {
+    "id": "05432",
+    "name": "Natty I",
+    "role": "cooker",
+    "origin": "London, UK",
+    "style": "can't live without sound clash",
+    "quote": "Mi oven runs on dubplates.",
+    "image": "images/rasta05432.png",
+    "position": null
+  },
+  {
+    "id": "07005",
+    "name": "Connie Jacobs",
+    "role": "movie star",
+    "origin": "Virgin Islands",
+    "style": "strictly roots",
+    "quote": "Every film needs a riddim.",
+    "image": "images/rasta07005.png",
+    "position": null
+  },
+  {
+    "id": "09630",
+    "name": "Danny Levi",
+    "role": "doctor",
+    "origin": "St. Ann, Jamaica",
+    "style": "crazy for soundsystems",
+    "quote": "I prescribe two scoops of bass.",
+    "image": "images/rasta09630.png",
+    "position": null
+  },
+  {
+    "id": "04195",
+    "name": "Jennifer Beckford",
+    "role": "poet",
+    "origin": "Montego Bay, Jamaica",
+    "style": "loves samba-reggae",
+    "quote": "My verses ride riddims.",
+    "image": "images/rasta04195.png",
+    "position": null
+  },
+  {
+    "id": "05723",
+    "name": "Brooke Smith",
+    "role": "farmer",
+    "origin": "Los Angeles, USA",
+    "style": "crazy for dancehall",
+    "quote": "Mi crops grow on a one-two beat.",
+    "image": "images/rasta05723.png",
+    "position": null
+  }
+]
