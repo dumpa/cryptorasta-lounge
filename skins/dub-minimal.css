@@ -1,0 +1,57 @@
+/* =========================================================
+   CRYPTORASTA — DUB MINIMAL SKIN
+   Winamp mindset: core fijo, skin intercambiable
+   ========================================================= */
+
+:root{
+  /* Colores base */
+  --bg: #050505;
+  --panel: #0b0b0b;
+  --panel-soft: #0f0f0f;
+
+  --text: #eaeaea;
+  --muted: #9a9a9a;
+
+  /* Acentos dub */
+  --green: #16a34a;
+  --yellow: #eab308;
+  --red: #dc2626;
+
+  --border: rgba(255,255,255,0.08);
+  --radius: 14px;
+
+  /* Tipografía */
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+}
+
+/* Reset básico */
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background:
+    radial-gradient(1200px 900px at 50% 20%, #0a0a0a 0%, var(--bg) 60%, #000 100%);
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+/* =========================================================
+   Layout general
+   ========================================================= */
+
+.app{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 12px;
+  padding: 14px;
+}
+
+/* ==========*
