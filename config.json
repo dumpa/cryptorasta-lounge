@@ -5,9 +5,9 @@
     "defaultTrackIndex": 0
   },
   "playlist": [
-    { "id": "t1", "title": "The center is chill", "file": "tracks/the-center-is-chill.mp3" },
-    { "id": "t2", "title": "Be one", "file": "tracks/be-one.mp3" },
-    { "id": "t3", "title": "We have to", "file": "tracks/we-have-to.mp3" }
+    { "id": "t1", "title": "The center is chill", "file": "music/the-center-is-chill.mp3" },
+    { "id": "t2", "title": "Be one", "file": "music/be-one.mp3" },
+    { "id": "t3", "title": "We have to", "file": "music/we-have-to.mp3" }
   ],
   "rastabuttons": [
     { "id": "r1", "label": "Rasta 1", "action": "noop" },
