@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cryptorasta — Rocola</title>
+  <link id="skin-link" rel="stylesheet" href="skins/dub-minimal.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="visual-stage" id="visualStage" aria-label="Visuales">
+      <div class="visual-placeholder" id="visualPlaceholder">
+        <div class="ph-title">CRYPTORASTA VISUALS</div>
+        <div class="ph-sub">Dub Minimal / placeholder</div>
+      </div>
+    </section>
+
+    <section class="player-panel" aria-label="Rocola">
+      <div class="now-playing">
+        <div class="label">Now Playing</div>
+        <div class="track" id="nowPlaying">—</div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="btnPrev" type="button">◀</button>
+        <button class="btn btn-primary" id="btnPlay" type="button">Play</button>
+        <button class="btn" id="btnNext" type="button">▶</button>
+      </div>
+
+      <div class="playlist" id="playlist" aria-label="Playlist"></div>
+
+      <div class="utility">
+        <button class="btn btn-ghost" id="btnFullscreen" type="button">Fullscreen</button>
+        <button class="btn btn-ghost" id="btnSkin" type="button">Skin</button>
+      </div>
+    </section>
+
+    <section class="rasta-dock" id="rastaDock" aria-label="Botones Rasta"></section>
+  </main>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
